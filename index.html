@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Best automotive dealership for new and used cars."
+    />
+    <title>AutoMax Dealership</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>AutoMax</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="quote-btn">Get a Quote</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>Find Your Dream Car Today</h2>
+        <p>Browse our selection of new and used vehicles.</p>
+        <a href="#inventory" class="btn-primary">View Inventory</a>
+      </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="inventory">
+      <h2>Our Vehicles</h2>
+      <div class="vehicle-grid">
+        <div class="vehicle">
+          <img src="car1.jpg" alt="Car 1" />
+          <h3>2024 Ford Mustang</h3>
+          <p>$45,000</p>
+          <button class="btn-secondary">Details</button>
+        </div>
+        <div class="vehicle">
+          <img src="car2.jpg" alt="Car 2" />
+          <h3>2024 Tesla Model 3</h3>
+          <p>$55,000</p>
+          <button class="btn-secondary">Details</button>
+        </div>
+        <!-- Add more vehicles as needed -->
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Financing Options</h3>
+          <p>We offer flexible financing options to suit your needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Car Maintenance</h3>
+          <p>
+            Keep your vehicle in top condition with our expert maintenance
+            services.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Trade-In Program</h3>
+          <p>
+            Trade in your old car and get the best value towards your new
+            purchase.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        At AutoMax, we are committed to providing the best automotive dealership
+        experience with a wide selection of cars and excellent customer service.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 AutoMax Dealership. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
