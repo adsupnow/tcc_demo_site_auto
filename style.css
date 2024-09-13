@@ -141,6 +141,30 @@ select {
 }
 
 /* Inventory Section */
+.centered {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel .vehicle {
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel .vehicle img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
 .inventory {
   padding: 50px 0;
   text-align: center;
