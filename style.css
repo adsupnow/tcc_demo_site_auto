@@ -203,7 +203,8 @@ select {
 .about {
   padding: 50px 0;
   text-align: center;
-  background-color: #fafafa;
+  background-color: #231239;
+  color: white;
 }
 
 /* Contact Section */
