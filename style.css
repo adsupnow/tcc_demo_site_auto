@@ -140,7 +140,17 @@ select {
   transition: background 0.3s;
 }
 
+/* Carousel Section */
+.carousel .vehicle {
+  text-align: center;
+}
+
 /* Inventory Section */
+.centered {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .inventory {
   padding: 50px 0;
   text-align: center;
