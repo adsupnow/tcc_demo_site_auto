@@ -9,6 +9,8 @@
     />
     <title>AutoMax Dealership</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -85,10 +87,10 @@
       </div>
     </section>
 
-    <!-- Inventory Section -->
-    <section id="inventory" class="inventory">
-      <h2>Our Vehicles</h2>
-      <div class="vehicle-grid">
+    <!-- Carousel -->
+    <section class="centered">
+      <h2>Featured Vehicles</h2>
+      <div class="carousel">
         <div class="vehicle">
           <img src="images/AIcar.jpg" alt="Car 1" />
           <h3>AI Trek</h3>
@@ -125,26 +127,27 @@
           <p>$36,253</p>
           <button class="btn-secondary">Details</button>
         </div>
-        <!-- Add more vehicles as needed -->
       </div>
     </section>
+    <!-- End of Carousel -->
 
     <!-- Services Section -->
     <section id="services" class="services">
       <h2>Our Services</h2>
-      <div class="service-list">
-        <div class="service-item">
+
+      <div class="service-items">
+        <div class="service-item financing">
           <h3>💰Financing Options</h3>
           <p>We offer flexible financing options to suit your needs.</p>
         </div>
-        <div class="service-item">
+        <div class="service-item maintenance">
           <h3>🔧Car Maintenance</h3>
           <p>
             Keep your vehicle in top condition with our expert maintenance
             services.
           </p>
         </div>
-        <div class="service-item">
+        <div class="service-item tradein">
           <h3>🚗Trade-In Program</h3>
           <p>
             Trade in your old car and get the best value towards your new
@@ -187,6 +190,24 @@
         <button type="submit" class="btn-primary">Submit</button>
       </form>
     </section>
+
+    <!--Scripts-->
+    <script src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
 
     <!-- DO NOT REMOVE SCRIPT: Beginning of embed script -->
     <div id="clx-drawer"></div>
